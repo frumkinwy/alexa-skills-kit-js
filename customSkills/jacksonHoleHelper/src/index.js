@@ -170,7 +170,7 @@ HowTo.prototype.intentHandlers = {
             repromptOutput;
           avyGetter.getPassReport(itemName, function(report){
 
-                cardTitle = "Recipe for " + itemName,
+                cardTitle = "Road Report for the " + itemName,
                 recipe = report,
                 speechOutput,
                 repromptOutput;
@@ -202,8 +202,8 @@ HowTo.prototype.intentHandlers = {
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        var speechText = "You can ask questions such as, what's the recipe, or, you can say exit... Now, what can I help you with?";
-        var repromptText = "You can say things like, what's the recipe, or you can say exit... Now, what can I help you with?";
+        var speechText = "You can ask questions such as, is the pass open, or, what is the temperature report, or, you can say exit... Now, what can I help you with?";
+        var repromptText = "You can say things like, what's the avalanche danger, or you can say exit... Now, what can I help you with?";
         var speechOutput = {
             speech: speechText,
             type: AlexaSkill.speechOutputType.PLAIN_TEXT
